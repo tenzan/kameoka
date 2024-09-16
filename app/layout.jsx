@@ -4,8 +4,8 @@ import { Header } from '../components/header';
 
 export const metadata = {
     title: {
-        template: '%s | Netlify',
-        default: 'Netlify Starter'
+        template: '%s | Real Estate in Japan',
+        default: 'Real Estate in Kameoka City, Kyoto'
     }
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
                     <div className="flex flex-col w-full max-w-5xl mx-auto grow">
                         <Header />
                         <div className="grow">{children}</div>
-                        <Footer />
+                        {/*<Footer />*/}
                     </div>
                 </div>
             </body>
