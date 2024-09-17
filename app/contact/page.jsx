@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 const explainer = `
-You can contact me via this feedback form.
+You can contact me via this feedback form. I'm the owner.
 `;
 
 export default async function Page() {

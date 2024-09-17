@@ -4,19 +4,20 @@ import { RandomQuote } from 'components/random-quote';
 import { Markdown } from 'components/markdown';
 import { ContextAlert } from 'components/context-alert';
 import { getNetlifyContext } from 'utils';
+import Information from 'components/information';
 
 const cards = [
     //{ text: 'Hello', linkText: 'someLink', href: '/' }
 ];
 
-const contextExplainer = `
-The card below is rendered on the server based on the value of \`process.env.CONTEXT\` 
-([docs](https://docs.netlify.com/configure-builds/environment-variables/#build-metadata)):
-`;
+// const contextExplainer = `
+// The card below is rendered on the server based on the value of \`process.env.CONTEXT\`
+// ([docs](https://docs.netlify.com/configure-builds/environment-variables/#build-metadata)):
+// `;
 
-const preDynamicContentExplainer = `
-The card content below is fetched by the client-side from \`/quotes/random\` (see file \`app/quotes/random/route.js\`) with a different quote shown on each page load:
-`;
+// const preDynamicContentExplainer = `
+// The card content below is fetched by the client-side from \`/quotes/random\` (see file \`app/quotes/random/route.js\`) with a different quote shown on each page load:
+// `;
 
 const postDynamicContentExplainer = `
 On Netlify, Next.js Route Handlers are automatically deployed as [Serverless Functions](https://docs.netlify.com/functions/overview/).
@@ -31,15 +32,18 @@ export default function Page() {
     return (
         <main className="flex flex-col gap-8 sm:gap-16">
             <section className="flex flex-col items-start gap-3 sm:gap-4">
-                <ContextAlert />
-                <h1 className="mb-0">Netlify Platform Starter - Next.js</h1>
-                <p className="text-lg">Get started with Next.js and Netlify in seconds.</p>
-                <Link
-                    href="https://docs.netlify.com/frameworks/next-js/overview/"
-                    className="btn btn-lg btn-primary sm:btn-wide"
-                >
-                    Read the Docs
-                </Link>
+                {/*<ContextAlert />*/}
+                <h1 className="mb-0">Real Estate in Japan for Sale</h1>
+                <p className="text-lg">Some more information will come soon.</p>
+                <div>
+                    <Information />
+                </div>
+                {/*<Link*/}
+                {/*    href="https://docs.netlify.com/frameworks/next-js/overview/"*/}
+                {/*    className="btn btn-lg btn-primary sm:btn-wide"*/}
+                {/*>*/}
+                {/*    Read the Docs*/}
+                {/*</Link>*/}
             </section>
             {!!ctx && (
                 <section className="flex flex-col gap-4">
@@ -47,11 +51,11 @@ export default function Page() {
                     <RuntimeContextCard />
                 </section>
             )}
-            <section className="flex flex-col gap-4">
-                <Markdown content={preDynamicContentExplainer} />
-                <RandomQuote />
-                <Markdown content={postDynamicContentExplainer} />
-            </section>
+            {/*<section className="flex flex-col gap-4">*/}
+            {/*    <Markdown content={preDynamicContentExplainer} />*/}
+            {/*    <RandomQuote />*/}
+            {/*    <Markdown content={postDynamicContentExplainer} />*/}
+            {/*</section>*/}
             {/* !!cards?.length && <CardsGrid cards={cards} /> */}
         </main>
     );
