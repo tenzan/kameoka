@@ -45,12 +45,12 @@ export default function Page() {
                 {/*    Read the Docs*/}
                 {/*</Link>*/}
             </section>
-            {!!ctx && (
-                <section className="flex flex-col gap-4">
-                    <Markdown content={contextExplainer} />
-                    <RuntimeContextCard />
-                </section>
-            )}
+            {/*{!!ctx && (*/}
+            {/*    <section className="flex flex-col gap-4">*/}
+            {/*        <Markdown content={contextExplainer} />*/}
+            {/*        <RuntimeContextCard />*/}
+            {/*    </section>*/}
+            {/*)}*/}
             {/*<section className="flex flex-col gap-4">*/}
             {/*    <Markdown content={preDynamicContentExplainer} />*/}
             {/*    <RandomQuote />*/}
