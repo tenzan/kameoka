@@ -6,8 +6,15 @@ export default function Information() {
                     <table className="min-w-full table-fixed border-collapse border border-gray-300">
                         <tbody>
                         <tr className="border-t border-gray-300">
+                            <td className="px-4 py-2 text-gray-700 font-medium">Address</td>
+                            <td className="px-4 py-2 text-gray-700">| 25-25 Uchimarucho (738.90 m2), 25-13 Uchimarucho (241.39 m2), Kameoka City, Kyoto
+                            </td>
+                        </tr>
+                        <tr className="border-t border-gray-300">
                             <td className="px-4 py-2 text-gray-700 font-medium">Price</td>
-                            <td className="px-4 py-2 text-gray-700">| 180 million JPY (negotiation possible only after visiting the real estate)</td>
+                            <td className="px-4 py-2 text-gray-700">| 180 million JPY (negotiation possible only after
+                                visiting the real estate)
+                            </td>
                         </tr>
                         <tr className="border-t border-gray-300">
                             <td className="px-4 py-2 text-gray-700 font-medium">Size</td>
@@ -19,7 +26,8 @@ export default function Information() {
                         </tr>
                         <tr className="border-t border-gray-300">
                             <td className="px-4 py-2 text-gray-700 font-medium">Number of rooms</td>
-                            <td className="px-4 py-2 text-gray-700">| 21 (5 on the 1st floor and 8 on the 2nd and 3rd)</td>
+                            <td className="px-4 py-2 text-gray-700">| 21 (5 on the 1st floor and 8 on the 2nd and 3rd)
+                            </td>
                         </tr>
                         <tr className="border-t border-gray-300">
                             <td className="px-4 py-2 text-gray-700 font-medium">Car parking</td>
